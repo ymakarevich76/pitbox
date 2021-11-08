@@ -1,0 +1,45 @@
+.sub-1 {
+  position: absolute;
+  top: 99%;
+  left: 49%;
+
+  width: calc(100% / 4);
+
+  background-color: $c-secondary;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+
+  .nav__item:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (max-width: $xl) {
+    left: 59%;
+  }
+}
+
+
+.sub-1__item {
+  padding: 10px 15px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sub-1__link {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $ff-secondary;
+  color: $c-main;
+
+  transition: all .2 ease;
+
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}

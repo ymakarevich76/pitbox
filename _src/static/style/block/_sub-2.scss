@@ -1,0 +1,39 @@
+
+.sub-2__item {
+  padding: 10px;
+}
+
+.sub-2__link {
+  position: relative;
+
+  padding-left: 20px;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $ff-secondary;
+  color: $c-main;
+
+  transition: all .2 ease;
+
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  &::before {
+    content: "\2714";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    font-weight: 400;
+    font-size: 20px;
+    font-family: $ff-secondary;
+    color: $c-accent;
+  }
+}

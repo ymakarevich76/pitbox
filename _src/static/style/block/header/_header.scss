@@ -1,2 +1,141 @@
 .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  height: 162px;
+}
+
+.header__top {
+  display: flex;
+  // justify-content: space-between;
+  width: 100%;
+
+  background: rgba(0, 0, 0, .5) url("../img/bc/grey-bg-copy.png") no-repeat scroll 0 0;
+}
+
+.header__logo {
+  width: 30%;
+  margin-right: auto;
+  padding: 24px 0 13px 32px;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 30%);
+
+  @media (max-width: $xl) {
+    margin-left: 30px;
+  }
+}
+
+.header__right-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header__address {
+  flex-grow: 1;
+  // width: calc(100% - 240px);
+  // padding: 17px 60px 17px 86px;
+}
+
+.header__appointment {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 59px;
+  margin-left: -15px;
+  padding: 17px 20px;
+
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 25px;
+  font-family: $ff-secondary;
+  text-align: center;
+  color: $c-main;
+
+  background-color: $c-accent;
+
+  transition: .3s;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -47.3px;
+
+    width: 0;
+    height: 0;
+
+    border-width: 0 48px 59px 0;
+    border-style: solid;
+    border-color: transparent $c-accent transparent transparent;
+  }
+
+  & svg {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+    transition: .3s;
+
+    fill: $c-main;
+  }
+
+  &:hover {
+    color: #333;
+    text-decoration: none;
+  }
+
+  &:hover svg {
+    fill: #333;
+  }
+}
+
+.header__right-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icons {
+  display: flex;
+}
+
+.header__icons img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+}
+
+.header__phone .phone__link {
+  margin-right: 15px;
+}
+
+.header__bottom {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  padding: 0 15px;
+
+  background-color: $c-secondary;
 }

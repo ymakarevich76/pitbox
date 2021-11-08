@@ -3,11 +3,11 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 
   font-size: $fz-main;
   font-family: $ff-main;
   color: $c-main;
-  // overflow-x: hidden;
 }
 
 .main {
@@ -18,6 +18,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.main img {
+  filter: grayscale(100%);
+}
+
+.main img {
+  filter: grayscale(0%);
 }
 
 // input auto-complete change color

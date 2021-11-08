@@ -1,0 +1,60 @@
+.promo {
+  background-color: #2d2d2d;
+}
+
+.promo__container {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 39px;
+}
+
+.promo__title {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-bottom: 0;
+
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  font-family: $ff-secondary;
+  color: $c-secondary;
+}
+
+.promo__title-bottom {
+  margin-left: 76px;
+
+  color: $c-accent;
+}
+
+.promo__center {
+  position: relative;
+
+  display: flex;
+}
+
+.promo__desc {
+  width: calc(100% - 48.5%);
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 25px;
+  font-family: $ff-main;
+  color: $c-secondary;
+}
+
+.promo__wrap-img {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  z-index: 5;
+
+  width: 48.5%;
+}
+
+.promo__right {
+  position: relative;
+  z-index: 7;
+
+  margin-left: auto;
+}

@@ -1,0 +1,14 @@
+.address {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $ff-main;
+  text-align: left;
+  color: $c-secondary;
+
+  &--color {
+    color: $c-accent;
+  }
+}

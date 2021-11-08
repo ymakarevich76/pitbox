@@ -1,0 +1,89 @@
+.intro-slider {
+  height: 840px;
+
+  background-color: #2d2d2d;
+}
+
+.intro-slider__slide {
+  position: relative;
+}
+
+.intro-slider__text-wrap {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  @media (max-width: $xl) {
+    top: 195px;
+  }
+}
+
+.intro-slider__title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 1;
+  font-family: $ff-secondary;
+  color: $c-accent;
+  text-transform: uppercase;
+
+  @media (max-width: $xl) {
+    margin-bottom: 10px;
+
+    font-size: 42px;
+  }
+}
+
+.intro-slider__subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1.2;
+  font-family: $ff-secondary;
+  color: $c-secondary;
+
+  @media (max-width: $xl) {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+  }
+}
+
+.intro-slider__text {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-secondary;
+
+  @media (max-width: $xl) {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+  }
+}
+
+.intro-slider__item {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-secondary;
+}
+
+.intro-slider__box-btn {
+  @media (max-width: $xl) {
+    display: none;
+  }
+}
+
+.intro-slider__list {
+}

@@ -20,11 +20,21 @@
 }
 
 @font-face {
-  font-weight: 700;
-  font-family: Roboto;
-  font-style: italic;
+  font-weight: 600;
+  font-family: Poppins;
+  font-style: normal;
 
   font-display: swap;
-  src: url(../font/Roboto/Roboto-BoldItalic.woff2),
-  url(../font/Roboto/Roboto-BoldItalic.woff);
+  src: url(../font/Poppins/Poppins-SemiBold.woff2),
+  url(../font/Poppins/Poppins-SemiBold.woff);
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Poppins;
+  font-style: normal;
+
+  font-display: swap;
+  src: url(../font/Poppins/Poppins-Regular.woff2),
+  url(../font/Poppins/Poppins-Regular.woff);
 }

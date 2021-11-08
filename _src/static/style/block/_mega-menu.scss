@@ -1,0 +1,53 @@
+.mega-menu {
+  position: absolute;
+  top: 99%;
+  left: 15px;
+
+  justify-content: center;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  background-color: $c-secondary;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+
+  .nav__item:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.mega-menu__list {
+  width: $c-3;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.mega-menu__item {
+  padding: 10px 15px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+
+.mega-menu__link {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $ff-secondary;
+  color: $c-main;
+
+  transition: all .2 ease;
+
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}

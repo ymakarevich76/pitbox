@@ -44,10 +44,17 @@
     transition: .3s;
 
     fill: #5f5f5f;
+    @media (max-width: $lg) {
+      fill: $c-secondary;
+    }
   }
 
   &:hover {
     background-color: $c-accent;
+
+    @media (max-width: $lg) {
+      background-color: transparent;
+    }
   }
 
   &:hover svg {

@@ -18,11 +18,20 @@
 .phone__whatsapp {
   margin-right: 15px;
 
+  @media (max-width: $lg) {
+    margin-right: 0;
+  }
+
   & svg {
     width: 30px;
     height: 30px;
 
     fill: $c-secondary;
+
+    @media (max-width: $lg) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &:hover svg {

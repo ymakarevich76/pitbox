@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="header__container container">
     <div class="header__top">
       <a href="#" class="header__logo logo">
         <img src="static/img/logo/logo-violet.png" alt="Логотип">
@@ -21,6 +21,15 @@
             </svg>
             <span>Записаться</span>
           </a>
+
+          <div class="header__right-block">
+            <button type="button" class="header__nav-btn btn-reset">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
         </div>
         <div class="header__right-bottom">
           <div class="header__icons">
@@ -31,7 +40,7 @@
           <div class="header__phone phone">
             <a href="tel:+74956499839" class="phone__link">
               + 7 <span class="phone__link--color">(495)</span> 649-98-39</a>
-            <a href="#" class="phone__whatsapp">
+            <a href="#" class="phone__whatsapp" data-da=".header__right-block,992, first">
               <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#whatsapp"></use>
               </svg>
@@ -41,19 +50,12 @@
       </div>
     </div>
     <div class="header__bottom">
+      <button class="header__icon-close btn-reset">
+      </button>
       <nav class="header__nav nav">
         <ul class="nav__list list-reset">
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--active">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Замена масла</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Сход-развал</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Автосервис</a>
+            <a href="#" class="nav__link nav__link--active">Автосервис</a>
             <div class="nav__mega-menu mega-menu row">
               <ul class="mega-menu__list col">
                 <li class="mega-menu__item">
@@ -138,6 +140,12 @@
             </div>
           </li>
           <li class="nav__item">
+            <a href="#" class="nav__link">Автозапчасти</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Сход-развал</a>
+          </li>
+          <li class="nav__item">
             <a href="#" class="nav__link">Шиномонтаж</a>
             <ul class="nav__sub-1 sub-1 list-reset">
               <li class="sub-1__item">
@@ -152,14 +160,23 @@
             </ul>
           </li>
           <li class="nav__item">
+            <a href="#" class="nav__link">Замена масла</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Тюнинг</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О сервисе</a>
+          </li>
+          <li class="nav__item">
             <a href="#" class="nav__link">Контакты</a>
           </li>
         </ul>
-        <div class="nav__icon icon-nav">
-          <span></span>
-        </div>
       </nav>
-      <form action="" class="header__search search">
+      <form action="" class="header__search search" data-da=".header__right-block,992, first">
         <button type="submit" class="search__btn btn-reset">
           <svg aria-hidden="true">
             <use xlink:href="static/img/symbol/sprite.svg#search"></use>

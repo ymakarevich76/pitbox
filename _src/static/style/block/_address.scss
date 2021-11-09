@@ -10,5 +10,9 @@
 
   &--color {
     color: $c-accent;
+
+    @media (max-width: $lg) {
+      color: $c-secondary;
+    }
   }
 }

@@ -15,21 +15,55 @@
   .nav__item:hover & {
     visibility: visible;
     opacity: 1;
+
+    @media (max-width: $lg) {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 
   @media (max-width: $xl) {
     left: 59%;
   }
+
+  @media (max-width: $lg) {
+    top: 0;
+    left: 99%;
+
+    width: 250px;
+
+    background-color: #262626;
+  }
+
+  @media (max-width: $md) {
+    position: absolute;
+    top: 100%;
+    left: 15px;
+
+    width: 100%;
+    margin: 0 -15px;
+
+    background-color: transparent;
+  }
+
+  .nav__link--active + & {
+    @media (max-width: $md) {
+      position: relative;
+    }
+  }
 }
 
 
 .sub-1__item {
-  padding: 10px 15px;
-
-  border-bottom: 1px solid #f0f0f0;
+  @media (max-width: $md) {
+    margin: 0 15px;
+  }
 }
 
 .sub-1__link {
+  display: block;
+  padding: 10px 15px;
+
   font-size: 15px;
   line-height: 20px;
   font-family: $ff-secondary;
@@ -37,6 +71,14 @@
 
   transition: all .2 ease;
 
+  .sub-1__item:not(:last-child) & {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  @media (max-width: $lg) {
+    font-size: 13px;
+    color: $c-secondary;
+  }
 
   &:hover {
     color: $c-accent;

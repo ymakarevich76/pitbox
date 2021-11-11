@@ -15,23 +15,125 @@
   }
 }
 
-.header__container {
-  @media (max-width: $lg) {
-    max-width: 100%;
+.header__mob {
+  display: none;
+
+  @media (max-width: $md) {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #131313;
+  }
+}
+
+.header__mob-icon {
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+}
+
+.header__mob-icon {
+  & svg {
+    width: 15px;
+    height: 15px;
+
+    transform: rotate(90deg);
+
+    transition: .3s;
+
+    fill: $c-secondary;
+  }
+
+  &--active svg {
+    transform: rotate(-90deg);
+
+    fill: $c-accent;
+  }
+}
+
+.header__info {
+  width: 100%;
+  height: 0;
+
+  background-color: #2d2d2d;
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+
+  &--active {
+    height: auto;
+
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.header__info-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px 12px;
+}
+
+.header__info-time {
+  position: relative;
+
+  display: inline-block;
+  margin-bottom: 12px;
+  padding-left: 30px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $ff-main;
+  color: $c-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 14px;
+    height: 18px;
+
+    background: url("../img/icon/clock.svg") no-repeat;
+    transform: translate(0, -50%);
   }
 }
 
 .header__top {
-  display: flex;
-  // justify-content: space-between;
   width: 100%;
 
-  background: rgba(0, 0, 0, .5) url("../img/bc/grey-bg-copy.png") no-repeat scroll 0 0;
+  @media (max-width: $lg) {
+    padding: 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 0;
+  }
+}
+
+.header__top-container {
+  display: flex;
+
+  background: url("../img/bc/grey-bg.png") no-repeat;
+
 
   @media (max-width: $lg) {
     align-items: center;
 
     background: none;
+  }
+
+  @media (max-width: $md) {
+    justify-content: space-between;
+    padding: 0 15px;
+
+    background-color: #2d2d2d;
   }
 }
 
@@ -42,6 +144,11 @@
 
   @media (max-width: $lg) {
     padding: 5px 0;
+  }
+
+  @media (max-width: $sm) {
+    flex-shrink: 0;
+    width: 40%;
   }
 }
 
@@ -71,15 +178,23 @@
   @media (max-width: $lg) {
     margin-bottom: 0;
   }
+
+  @media (max-width: $md) {
+    justify-content: flex-end;
+  }
 }
 
-.header__address {
+.header__time {
   flex-grow: 1;
 
   @media (max-width: $lg) {
     display: flex;
     justify-content: flex-end;
     margin-right: 75px;
+  }
+
+  @media (max-width: $md) {
+    display: none;
   }
 }
 
@@ -114,6 +229,9 @@
     line-height: 22px;
   }
 
+  @media (max-width: $md) {
+    height: 33px;
+  }
 
   &::after {
     content: "";
@@ -130,6 +248,10 @@
 
     @media (max-width: $lg) {
       border-bottom-width: 50px;
+    }
+
+    @media (max-width: $md) {
+      border-bottom-width: 33px;
     }
   }
 
@@ -186,16 +308,40 @@
   margin-right: 15px;
 }
 
-.header__bottom {
+.header__wrap-bottom {
   position: relative;
 
+  width: 100%;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 111;
+  }
+}
+
+.header__bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  // height: 54px;
-  padding: 0 15px;
+  height: 54px;
 
   background-color: $c-secondary;
+
+  transition: .8s;
+
+  @media (max-width: $lg) {
+    height: 0;
+
+    background-color: transparent;
+  }
+}
+
+.header__nav {
+  flex-grow: 1;
+  margin-left: 15px;
 
   @media (max-width: $lg) {
     position: fixed;
@@ -203,10 +349,11 @@
     left: 0;
     z-index: 50;
 
-    width: 25%;
+    width: 226px;
     height: 100%;
+    margin-left: 0;
     padding: 0;
-    overflow-y: scroll;
+    padding-top: 40px;
 
     background-color: #262626;
     transform: translate(-100%, 0);
@@ -216,13 +363,6 @@
     &--active {
       transform: translate(0, 0);
     }
-  }
-}
-
-.header__nav {
-  @media (max-width: $lg) {
-    width: 100%;
-    padding-top: 40px;
   }
 }
 
@@ -262,11 +402,14 @@
 }
 
 .header__icon-close {
+  display: none;
+
   @media (max-width: $lg) {
     position: absolute;
     top: 15px;
     right: 20px;
 
+    display: block;
     width: 30px;
     height: 30px;
 

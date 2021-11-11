@@ -1,22 +1,77 @@
 .intro-slider {
-  height: 840px;
-
-  background-color: #2d2d2d;
+  height: 100%;
 }
 
 .intro-slider__slide {
   position: relative;
+
+  height: 840px;
+
+  @media (max-width: $xl) {
+    height: 534px;
+  }
+
+  @media (max-width: $lg) {
+    height: 526px;
+  }
+
+  @media (max-width: $md) {
+    height: auto;
+  }
+}
+
+.intro-slider__img {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 1920px;
+  height: 846px;
+
+  object-fit: cover;
+
+  @media (max-width: $xl) {
+    height: 534px;
+
+    object-position: right;
+  }
+
+  @media (max-width: $lg) {
+    height: 526px;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+    // position: relative;
+    height: 405px;
+
+    object-position: center;
+  }
 }
 
 .intro-slider__text-wrap {
   position: absolute;
-  top: 200px;
+  top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
+  // padding-top: 220px;
 
-  @media (max-width: $xl) {
-    top: 195px;
+  padding-top: 20vw;
+
+  @media (max-width: $lg) {
+    // padding-top: 140px;
+    padding-top: 12vw;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 18vw;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 25vw;
+  }
+
+  @media (max-width: $xs) {
+    padding-top: 35vw;
   }
 }
 
@@ -35,6 +90,22 @@
 
     font-size: 42px;
   }
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+
+    font-size: 50px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+
+    font-size: 30px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 24px;
+  }
 }
 
 .intro-slider__subtitle {
@@ -50,6 +121,22 @@
     margin-bottom: 10px;
 
     font-size: 20px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+
+    font-size: $fz-main;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 14px;
   }
 }
 
@@ -67,16 +154,45 @@
 
     font-size: 18px;
   }
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+
+    font-size: 21px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 12px;
+  }
+}
+
+.intro-slider__list {
+  margin-bottom: 15px;
+  padding-left: 15px;
+
+  list-style-type: disc;
 }
 
 .intro-slider__item {
   margin-bottom: 0;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: $fz-main;
   line-height: 1.2;
   font-family: $ff-main;
   color: $c-secondary;
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 12px;
+  }
 }
 
 .intro-slider__box-btn {

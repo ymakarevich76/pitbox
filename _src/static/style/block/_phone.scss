@@ -1,9 +1,43 @@
 .phone__link {
-  font-weight: 600;
-  font-size: 27px;
-  line-height: 35px;
-  font-family: $ff-secondary;
+  position: relative;
+
+  display: inline-block;
+  margin-bottom: 12px;
+  padding-left: 30px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $ff-main;
   color: $c-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 14px;
+    height: 18px;
+
+    background: url("../img/icon/phone.svg") no-repeat;
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+
+  &--big {
+    margin-bottom: 0;
+
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 35px;
+    font-family: $ff-secondary;
+    color: $c-secondary;
+
+    &::before {
+      display: none;
+    }
+  }
 
   &--color {
     color: $c-accent;

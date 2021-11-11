@@ -2,17 +2,24 @@
   position: relative;
 
   display: block;
-  padding: 17px 34px;
+  min-width: 162px;
+  padding: 17px 10px;
   overflow: hidden;
 
   font-weight: 500;
   font-size: $fz-main;
   line-height: 18px;
+  text-align: center;
   color: $c-secondary;
   text-transform: capitalize;
 
   background-color: transparent;
   border: 2px solid $c-accent;
+
+
+  @media (max-width: $sm) {
+    padding: 8px 10px;
+  }
 
   &:hover {
     color: #2c2c2c;
@@ -67,6 +74,10 @@
     line-height: 18px;
     color: $c-secondary;
     text-transform: capitalize;
+
+    @media (max-width: $sm) {
+      font-size: 12px;
+    }
   }
 }
 

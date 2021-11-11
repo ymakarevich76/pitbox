@@ -8,6 +8,10 @@ body {
   font-size: $fz-main;
   font-family: $ff-main;
   color: $c-main;
+
+  &.fixed {
+    overflow: hidden;
+  }
 }
 
 .main {

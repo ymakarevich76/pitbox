@@ -1,0 +1,30 @@
+.time {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $ff-main;
+  text-align: left;
+  color: $c-secondary;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+
+  &--color {
+    color: $c-accent;
+
+    @media (max-width: $lg) {
+      color: $c-secondary;
+    }
+  }
+
+  &--short {
+    display: none;
+
+    @media (max-width: $lg) {
+      display: block;
+    }
+  }
+}

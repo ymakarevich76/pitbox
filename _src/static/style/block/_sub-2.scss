@@ -1,6 +1,10 @@
 
 .sub-2__item {
   padding: 10px;
+
+  @media (max-width: $lg) {
+    padding: 5px;
+  }
 }
 
 .sub-2__link {
@@ -14,6 +18,14 @@
   color: $c-main;
 
   transition: all .2 ease;
+
+  @media (max-width: $lg) {
+    padding-left: 7px;
+
+    font-size: 12px;
+    line-height: 15px;
+    color: $c-secondary;
+  }
 
 
   &:hover {
@@ -35,5 +47,14 @@
     font-size: 20px;
     font-family: $ff-secondary;
     color: $c-accent;
+
+    @media (max-width: $lg) {
+      left: -7px;
+
+      width: 15px;
+      height: 15px;
+
+      font-size: 15px;
+    }
   }
 }

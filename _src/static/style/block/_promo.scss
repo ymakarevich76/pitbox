@@ -1,16 +1,32 @@
 .promo {
+  margin-bottom: 120px;
+
   background-color: #2d2d2d;
+
+  @media (max-width: $lg) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__container {
   display: flex;
   align-items: center;
   padding: 36px 0 39px;
+
+  @media (max-width: $lg) {
+    max-width: 100%;
+    padding: 23px 15px 26px;
+  }
 }
 
 .promo__title {
   display: flex;
   flex-direction: column;
+  min-width: 208px;
   margin-right: 50px;
   margin-bottom: 0;
 
@@ -19,18 +35,46 @@
   line-height: 33px;
   font-family: $ff-secondary;
   color: $c-secondary;
+
+  @media (max-width: $lg) {
+    min-width: 160px;
+    margin-right: 20px;
+
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .promo__title-bottom {
   margin-left: 76px;
 
   color: $c-accent;
+
+  @media (max-width: $lg) {
+    margin-left: 40px;
+
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  @media (max-width: $sm) {
+    margin-left: 25px;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .promo__center {
   position: relative;
 
   display: flex;
+  flex-grow: 1;
 }
 
 .promo__desc {
@@ -41,6 +85,16 @@
   line-height: 25px;
   font-family: $ff-main;
   color: $c-secondary;
+
+  @media (max-width: $lg) {
+    width: calc(100% - 42.5%);
+
+    font-size: 14px;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
 }
 
 .promo__wrap-img {
@@ -50,6 +104,35 @@
   z-index: 5;
 
   width: 48.5%;
+
+  @media (max-width: $xl) {
+    top: -50px;
+  }
+  @media (max-width: $lg) {
+    top: -25px;
+
+    width: 42.5%;
+  }
+
+  @media (max-width: $md) {
+    top: -75px;
+
+    flex-shrink: 0;
+    width: 230px;
+  }
+
+  @media (max-width: $sm) {
+    top: -45px;
+
+    width: 150px;
+  }
+
+  @media (max-width: $xs) {
+    top: -22px;
+    right: 15px;
+
+    width: 70px;
+  }
 }
 
 .promo__right {
@@ -57,4 +140,10 @@
   z-index: 7;
 
   margin-left: auto;
+}
+
+.promo__btn {
+  @media (max-width: $sm) {
+    min-width: 105px;
+  }
 }

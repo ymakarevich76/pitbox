@@ -1,21 +1,45 @@
 <header class="header">
-  <div class="header__container container">
-    <div class="header__top">
+  <div class="header__info">
+    <div class="header__info-wrap">
+      <p class="address">ул. Барышиха, 57 а, Москва, Россия</p>
+      <div class="phone">
+        <a href="tel:+74956499839" class="phone__link">
+          + 7 (495) 649-98-39</a>
+      </div>
+      <a href="#" class="email">info@pitbox.ru</a>
+      <p class="header__info-time">
+        Пн-Вс: 9:00 - 22:00
+      </p>
+    </div>
+  </div>
+  <div class="header__mob">
+    <button type="button" class="header__mob-icon btn-reset">
+      <svg aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="header__top container">
+    <div class="header__top-container">
       <a href="#" class="header__logo logo">
         <img src="static/img/logo/logo-violet.png" alt="Логотип">
       </a>
       <div class="header__right">
         <div class="header__right-top">
-          <div class="header__address">
-            <p class="address">
+          <div class="header__time">
+            <p class="time">
               Понедельник-Воскресенье<br>
-              <span class="address--color">9:00 - 22:00</span>
+              <span class="time--color">9:00 - 22:00</span>
+            </p>
+            <p class="time time--short">
+              Пн-Вс:
+              <span class="time--color">9:00 - 22:00</span>
             </p>
           </div>
-          <!-- <p class="header__address address">Понедельник-Воскресенье<br>
-            <span class="address--color">9:00 - 22:00</span>
+          <!-- <p class="header__time time">Понедельник-Воскресенье<br>
+            <span class="time--color">9:00 - 22:00</span>
           </p> -->
-          <a href="#" class="header__appointment">
+          <a href="#" class="header__appointment" data-da=".header__mob,768, last">
             <svg aria-hidden="true">
               <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
             </svg>
@@ -38,7 +62,7 @@
             <img src="static/img/icon/armchair-svgrepo-com.svg" alt="Кресло">
           </div>
           <div class="header__phone phone">
-            <a href="tel:+74956499839" class="phone__link">
+            <a href="tel:+74956499839" class="phone__link  phone__link--big">
               + 7 <span class="phone__link--color">(495)</span> 649-98-39</a>
             <a href="#" class="phone__whatsapp" data-da=".header__right-block,992, first">
               <svg aria-hidden="true">
@@ -49,13 +73,22 @@
         </div>
       </div>
     </div>
-    <div class="header__bottom">
-      <button class="header__icon-close btn-reset">
-      </button>
+  </div>
+  <div class="header__wrap-bottom container">
+    <div class="header__bottom animate__animated animate__fast">
+
       <nav class="header__nav nav">
+        <button class="header__icon-close btn-reset">
+        </button>
         <ul class="nav__list list-reset">
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--active">Автосервис</a>
+            <a href="#" class="nav__link nav__link--border">Автосервис
+              <button type="button" class="nav__box-icon btn-reset">
+                <svg aria-hidden="true">
+                  <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+                </svg>
+              </button>
+            </a>
             <div class="nav__mega-menu mega-menu row">
               <ul class="mega-menu__list col">
                 <li class="mega-menu__item">
@@ -146,7 +179,13 @@
             <a href="#" class="nav__link">Сход-развал</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Шиномонтаж</a>
+            <a href="#" class="nav__link">Шиномонтаж
+              <button type="button" class="nav__box-icon btn-reset">
+                <svg aria-hidden="true">
+                  <use xlink:href="static/img/symbol/sprite.svg#chevron-right"></use>
+                </svg>
+              </button>
+            </a>
             <ul class="nav__sub-1 sub-1 list-reset">
               <li class="sub-1__item">
                 <a href="#" class="sub-1__link">Сезонное хранение резины(шин)</a>
@@ -184,8 +223,8 @@
         </button>
         <input type="search" id="search" placeholder="Search …" class="search__input">
       </form>
-
     </div>
+  </div>
   </div>
   <!--/container-->
 </header>

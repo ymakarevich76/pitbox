@@ -19,65 +19,66 @@
       </svg>
     </button>
   </div>
-  <div class="header__top container">
-    <div class="header__top-container">
-      <a href="#" class="header__logo logo">
-        <img src="static/img/logo/logo-violet.png" alt="Логотип">
-      </a>
-      <div class="header__right">
-        <div class="header__right-top">
-          <div class="header__time">
-            <p class="time">
-              Понедельник-Воскресенье<br>
-              <span class="time--color">9:00 - 22:00</span>
-            </p>
-            <p class="time time--short">
-              Пн-Вс:
-              <span class="time--color">9:00 - 22:00</span>
-            </p>
-          </div>
-          <!-- <p class="header__time time">Понедельник-Воскресенье<br>
+  <div class="header__wrap-top animate__animated animate__fast">
+    <div class="header__top container">
+      <div class="header__top-container">
+        <a href="#" class="header__logo logo">
+          <img src="static/img/logo/logo-violet.png" alt="Логотип">
+        </a>
+        <div class="header__right">
+          <div class="header__right-top">
+            <div class="header__time">
+              <p class="time">
+                Понедельник-Воскресенье<br>
+                <span class="time--color">9:00 - 22:00</span>
+              </p>
+              <p class="time time--short">
+                Пн-Вс:
+                <span class="time--color">9:00 - 22:00</span>
+              </p>
+            </div>
+            <!-- <p class="header__time time">Понедельник-Воскресенье<br>
             <span class="time--color">9:00 - 22:00</span>
           </p> -->
-          <a href="#" class="header__appointment" data-da=".header__mob,768, last">
-            <svg aria-hidden="true">
-              <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
-            </svg>
-            <span>Записаться</span>
-          </a>
-
-          <div class="header__right-block">
-            <button type="button" class="header__nav-btn btn-reset">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-
-        </div>
-        <div class="header__right-bottom">
-          <div class="header__icons">
-            <img src="static/img/icon/coffee-solid.svg" alt="Кофе">
-            <img src="static/img/icon/wifi-solid.svg" alt="wi-fi">
-            <img src="static/img/icon/armchair-svgrepo-com.svg" alt="Кресло">
-          </div>
-          <div class="header__phone phone">
-            <a href="tel:+74956499839" class="phone__link  phone__link--big">
-              + 7 <span class="phone__link--color">(495)</span> 649-98-39</a>
-            <a href="#" class="phone__whatsapp" data-da=".header__right-block,992, first">
+            <a href="#" class="header__appointment" data-da=".header__mob,768, last">
               <svg aria-hidden="true">
-                <use xlink:href="static/img/symbol/sprite.svg#whatsapp"></use>
+                <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
               </svg>
+              <span>Записаться</span>
             </a>
+
+            <div class="header__right-block">
+              <button type="button" class="header__nav-btn btn-reset">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+          </div>
+          <div class="header__right-bottom">
+            <div class="header__icons">
+              <img src="static/img/icon/coffee-solid.svg" alt="Кофе">
+              <img src="static/img/icon/wifi-solid.svg" alt="wi-fi">
+              <img src="static/img/icon/armchair-svgrepo-com.svg" alt="Кресло">
+            </div>
+            <div class="header__phone phone">
+              <a href="tel:+74956499839" class="phone__link  phone__link--big">
+                + 7 <span class="phone__link--color">(495)</span> 649-98-39</a>
+              <a href="#" class="phone__whatsapp" data-da=".header__right-block,992, first">
+                <svg aria-hidden="true">
+                  <use xlink:href="static/img/symbol/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="header__wrap-bottom container">
-    <div class="header__bottom animate__animated animate__fast">
-
-      <nav class="header__nav nav">
+  <div class="header__wrap-bottom container animate__animated animate__fast">
+    <div class="header__bottom">
+      <nav class="header__nav nav" data-da=".header__nav-lg,992, first">
         <button class="header__icon-close btn-reset">
         </button>
         <ul class="nav__list list-reset">
@@ -225,6 +226,8 @@
       </form>
     </div>
   </div>
+
+  <div class="header__nav-lg"></div>
   </div>
   <!--/container-->
 </header>

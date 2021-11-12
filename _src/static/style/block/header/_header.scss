@@ -10,8 +10,6 @@
 
   @media (max-width: $lg) {
     height: 50px;
-
-    background-color: #333;
   }
 }
 
@@ -105,6 +103,22 @@
   }
 }
 
+.header__wrap-top {
+  @media (max-width: $lg) {
+    background-color: #333;
+  }
+
+  &--fixed {
+    @media (max-width: $lg) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 111;
+    }
+  }
+}
+
 .header__top {
   width: 100%;
 
@@ -115,16 +129,22 @@
   @media (max-width: $sm) {
     padding: 0;
   }
+
+  &--fixed {
+    position: fixed;
+  }
 }
 
 .header__top-container {
   display: flex;
+  height: 125px;
 
   background: url("../img/bc/grey-bg.png") no-repeat;
 
 
   @media (max-width: $lg) {
     align-items: center;
+    height: auto;
 
     background: none;
   }
@@ -220,6 +240,10 @@
 
   transition: .3s;
 
+  @media (max-width: $xl) {
+    font-size: 22px;
+  }
+
   @media (max-width: $lg) {
     width: 131px;
     height: 50px;
@@ -283,6 +307,8 @@
 .header__right-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 65px;
 
   @media (max-width: $lg) {
     display: none;
@@ -333,9 +359,10 @@
   transition: .8s;
 
   @media (max-width: $lg) {
-    height: 0;
+    display: none;
+    // height: 0;
 
-    background-color: transparent;
+    // background-color: transparent;
   }
 }
 
@@ -420,5 +447,13 @@
   @media (max-width: $md) {
     top: 12px;
     right: 5px;
+  }
+}
+
+.header__nav-lg {
+  display: none;
+
+  @media (max-width: $lg) {
+    display: block;
   }
 }

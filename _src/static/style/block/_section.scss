@@ -1,0 +1,15 @@
+section {
+  margin-bottom: 120px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 78px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 45px;
+  }
+}

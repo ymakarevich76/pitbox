@@ -1,21 +1,4 @@
 .direction {
-  margin-bottom: 120px;
-
-  @media (max-width: $xl) {
-    margin-bottom: 78px;
-  }
-
-  @media (max-width: $lg) {
-    margin-bottom: 60px;
-  }
-
-  @media (max-width: $md) {
-    margin-bottom: 45px;
-  }
-}
-
-.direction__container {
-  padding: 0;
 }
 
 .direction__title {
@@ -24,52 +7,6 @@
 
 .direction__title-desc {
   margin-bottom: 20px;
-}
-
-.direction__separator {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  width: 46px;
-  height: 3px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-
-  text-align: center;
-
-  background-color: $c-accent;
-
-  @media (max-width: $sm) {
-    width: 34px;
-    height: 2px;
-  }
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-
-    display: block;
-    width: 3px;
-    height: 3px;
-
-    background-color: $c-accent;
-
-    @media (max-width: $sm) {
-      width: 2px;
-      height: 2px;
-    }
-  }
-
-  &::after {
-    right: -5px;
-  }
-
-  &::before {
-    right: -10px;
-  }
 }
 
 .direction__wrap {

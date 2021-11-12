@@ -15,11 +15,13 @@
 .promo__container {
   display: flex;
   align-items: center;
-  padding: 36px 0 39px;
+  padding-top: 36px;
+  padding-bottom: 39px;
 
   @media (max-width: $lg) {
     max-width: 100%;
-    padding: 23px 15px 26px;
+    padding-top: 23px;
+    padding-bottom: 26px;
   }
 }
 

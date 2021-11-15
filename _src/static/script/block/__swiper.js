@@ -35,11 +35,12 @@ if (document.querySelector('.stages-work__slider')) {
           el: ".stages-work__pagination",
           clickable: true,
         },
+        spaceBetween: 30,
 
-        // autoplay: {
-        //   delay: 3000,
-        //   speed: 500,
-        // },
+        autoplay: {
+          delay: 3000,
+          speed: 500,
+        },
       });
     } else {
       console.log(stagesWorkSlider);
@@ -51,4 +52,25 @@ if (document.querySelector('.stages-work__slider')) {
 
   mediaQuery.addListener(handleTabletChange);
   handleTabletChange(mediaQuery);
-}
+};
+
+const testimonialsSlider = new Swiper('.testimonials__slider', {
+  loop: true,
+  // effect: "fade",
+
+  pagination: {
+    el: ".testimonials__pagination",
+    clickable: true,
+  },
+
+  slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  autoplay: {
+    delay: 2500,
+    speed: 500,
+  },
+});

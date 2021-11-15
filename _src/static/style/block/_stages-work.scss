@@ -4,6 +4,14 @@
 
   background: url("../img/bc/work-bg-2.jpg") no-repeat top right fixed;
   background-size: cover;
+
+  @media (max-width: $lg) {
+    padding: 60px 65px;
+  }
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
 }
 
 .stages-work__title {
@@ -16,8 +24,13 @@
 
 .stages-work__title-desc {
   margin-bottom: 40px;
+  padding: 0 10px;
 
   color: $c-secondary;
+
+  @media (max-width: $lg) {
+    margin-bottom: 15px;
+  }
 }
 
 .stages-work__slider {
@@ -36,10 +49,9 @@
 }
 
 .stages-work__slide {
-  position: relative;
-
+  // position: relative;
   width: 25%;
-  padding: 0 15px;
+  // padding: 0 15px;
 
   @media (max-width: 1400px) {
     width: 50%;
@@ -54,12 +66,25 @@
 .stages-work__wrap-img {
   position: relative;
 
-  padding-left: 75px;
+  padding-left: 90px;
 
   @media (max-width: $md) {
     display: flex;
     justify-content: center;
     padding-left: 0;
+  }
+
+  @media (max-width: 1400px) {
+    padding-left: 155px;
+  }
+
+  @media (max-width: $lg) {
+    padding-left: 75px;
+  }
+
+  @media (max-width: $md) {
+    height: 188px;
+    margin-left: -30px;
   }
 
   & img {
@@ -76,14 +101,10 @@
       width: 260px;
       height: 188px;
     }
-  }
 
-  @media (max-width: 1400px) {
-    padding-left: 147px;
-  }
-
-  @media (max-width: $lg) {
-    padding-left: 75px;
+    @media (max-width: $sm) {
+      width: auto;
+    }
   }
 }
 
@@ -110,8 +131,13 @@
   }
 
   @media (max-width: $md) {
+    // left: 15%;
+    position: relative;
     top: -27px;
-    left: 15%;
+    left: 40px;
+
+    order: -1;
+    width: 130px;
   }
 }
 
@@ -140,11 +166,11 @@
     justify-content: flex-start;
     padding: 11px 11px 11px 20px;
 
-    transform: translate(-30%, 0);
+    transform: translate(-25%, 0);
   }
 
   @media (max-width: $md) {
-    left: 28%;
+    left: 40%;
 
     width: 50%;
 
@@ -153,25 +179,8 @@
 
     transform: translate(0, 0);
   }
-}
 
-.stages-work__pagination {
-  &.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 11px;
-  }
-
-  & .swiper-pagination-bullet {
-    width: 5px;
-    height: 5px;
-
-    background-color: #c1c1c1;
-    border-radius: 3px;
-    opacity: 1;
-  }
-
-  & .swiper-pagination-bullet-active {
-    width: 12px;
-
-    background-color: $c-accent;
+  @media (max-width: $sm) {
+    left: 45%;
   }
 }

@@ -76,30 +76,33 @@
 }
 
 .header__info-time {
-  position: relative;
-
-  display: inline-block;
-  margin-bottom: 12px;
-  padding-left: 30px;
+  margin-bottom: 0;
 
   font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: $ff-main;
+  text-align: left;
   color: $c-secondary;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
+  @media (max-width: $lg) {
+    display: none;
+  }
 
-    display: block;
-    width: 14px;
-    height: 18px;
+  &--color {
+    color: $c-accent;
 
-    background: url("../img/icon/clock.svg") no-repeat;
-    transform: translate(0, -50%);
+    @media (max-width: $lg) {
+      color: $c-secondary;
+    }
+  }
+
+  &--short {
+    display: none;
+
+    @media (max-width: $lg) {
+      display: block;
+    }
   }
 }
 
@@ -358,11 +361,12 @@
 
   transition: .8s;
 
+  .header__wrap-bottom--fixed & {
+    box-shadow: 0 6px 35px rgba(0, 0, 0, .07);
+  }
+
   @media (max-width: $lg) {
     display: none;
-    // height: 0;
-
-    // background-color: transparent;
   }
 }
 

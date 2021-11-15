@@ -1,0 +1,75 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////
+  -->
+  <section class="intro-inner">
+    <h1>Контакты</h1>
+    @@include('block/breadcrumb.html')
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__wrap row">
+        <form action="" class="contacts__form form col">
+          <h2 class="contacts__title">Связаться!</h2>
+          <p class="contacts__title-desc title-desc">Для Вас всегда высококлассные специалисты, современное
+            профессиональное оборудование, диагностика, гарантия качества, привлекательные цены и широкий спектр
+            предоставляемых услуг. Ищите хороший автосервис в Митино, посетите PitBox.</p>
+          <span class="contacts__title-separator title-separator"></span>
+
+          <div class="contacts__form-box-input form__box-input">
+            <input class="contacts__input form__input" type="text" id="name" required placeholder="Ваше имя">
+            <input class="contacts__input form__input" type="email" id="email" required
+              placeholder="address@youremail.com">
+            <textarea class="contacts__textarea form__input" name="your-message" cols="40" rows="10"
+              placeholder="Ваш вопрос..."></textarea>
+
+          </div>
+          <button type="button" class="contacts__btn btn btn-reset">
+            <span>Связаться с нами</span>
+          </button>
+        </form>
+
+        <div class="contacts__box col">
+          <div class="contacts__block">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#map-mark"></use>
+            </svg>
+            <h4 class="contacts__block-title">Адрес</h4>
+            <p class="contacts__address">ул. Барышиха, 57 а, Москва, Россия</p>
+          </div>
+          <div class="contacts__block">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#phone"></use>
+            </svg>
+            <h4 class="contacts__block-title">Контактный телефон</h4>
+            <a href="tel:+74956499839" class="contacts__phone">
+              + 7 (495) 649-98-39</a>
+          </div>
+          <div class="contacts__block">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#email"></use>
+            </svg>
+            <h4 class="contacts__block-title">E-mail адрес</h4>
+            <a href="#" class="contacts__email">info@pitbox.ru</a>
+          </div>
+          <div class="contacts__block">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#clock"></use>
+            </svg>
+            <h4 class="contacts__block-title">Время работы</h4>
+            <p class="contacts__time">
+              Пн-Вс: 9:00 - 22:00
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

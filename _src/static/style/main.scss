@@ -17,7 +17,7 @@
 
 @import "block/header/header";
 @import "block/logo";
-// @import "block/breadcrumb";
+@import "block/breadcrumb";
 @import "block/title/title";
 
 
@@ -38,7 +38,13 @@
 @import "block/animate";
 @import "block/services";
 @import "block/stages-work";
-// @import "block/form/form";
+@import "block/swiper";
+@import "block/promo-2";
+@import "block/testimonials";
+@import "block/intro-inner";
+@import "block/contacts";
+@import "block/form/form";
+@import "block/promo-sale";
 // @import "block/form/form-group";
 // @import "block/form/form-label";
 // @import "block/form/form-control";

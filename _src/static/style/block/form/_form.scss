@@ -1,2 +1,29 @@
 .form {
 }
+
+.form__box-input {
+  display: flex;
+  width: 100%;
+}
+
+.form__input {
+  padding: 13px 12px 12px 18px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 25px;
+  font-family: $ff-main;
+  color: $c-main;
+
+  background: #f7f7f7;
+  border: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #8d8d8d;
+  }
+}

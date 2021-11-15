@@ -1,0 +1,167 @@
+.contacts {
+  background: url("../img/bc/contact-bg.png") no-repeat top right;
+}
+
+.contacts__title {
+  margin-bottom: 10px;
+
+  text-align: left;
+}
+
+.contacts__title-desc {
+  text-align: left;
+}
+
+.contacts__title-separator {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__form {
+  width: $c-8;
+  padding: 50px 30px 48px 47px;
+
+  background-color: $c-secondary;
+  box-shadow: 0 6px 35px rgba(0, 0, 0, .07);
+
+  @media (max-width: $lg) {
+    width: $c-7;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+    padding: 30px;
+  }
+}
+
+.contacts__form-box-input {
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+  @media (max-width: $lg) {
+    margin: 0;
+  }
+}
+
+.contacts__input {
+  width: calc(50% - 30px);
+  margin: 0 15px 30px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
+
+.contacts__textarea {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+  margin-bottom: 30px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
+
+.contacts__btn {
+  min-width: 188px;
+
+  border: 2px solid $c-main;
+
+  @media (max-width: $lg) {
+    min-width: 146px;
+  }
+
+  & span {
+    color: $c-main;
+    @media (max-width: $lg) {
+      font-size: 15px;
+    }
+  }
+
+  &:hover span {
+    color: $c-secondary;
+  }
+
+  &::before,
+  &::after {
+    background-color: $c-main;
+  }
+}
+
+.contacts__box {
+  width: $c-4;
+
+  @media (max-width: $lg) {
+    width: $c-5;
+  }
+
+  @media (max-width: $md) {
+    order: -1;
+    width: $c-12;
+  }
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__block-title {
+  margin-bottom: 10px;
+
+  @media (max-width: $lg) {
+    font-size: 22px;
+    line-height: 37px;
+  }
+
+  @media (max-width: $lg) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.contacts__block svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 20px;
+
+  fill: $c-accent;
+
+  @media (max-width: $lg) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__address,
+.contacts__phone,
+.contacts__email,
+.contacts__time {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 25px;
+  font-family: $ff-main;
+  color: #5f5f5f;
+}
+
+.contacts__phone {
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}

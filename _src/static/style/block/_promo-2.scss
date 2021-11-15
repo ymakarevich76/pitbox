@@ -1,0 +1,60 @@
+.promo-2 {
+}
+
+.promo-2__block {
+  width: $c-6;
+
+  @media (max-width: $lg) {
+    width: $c-12;
+  }
+}
+
+.promo-2__title {
+  margin-top: -10px;
+  margin-bottom: 30px;
+
+  text-align: left;
+}
+
+.promo-2__text {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 24px;
+  font-family: $ff-main;
+  color: #292929;
+
+  &--bold {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+  }
+
+  @media (max-width: $md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.promo-2__list {
+  margin-bottom: 15px;
+  padding-left: 15px;
+
+  list-style-type: disc;
+}
+
+.promo-2__item {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 24px;
+  font-family: $ff-main;
+  color: #292929;
+
+  @media (max-width: $md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

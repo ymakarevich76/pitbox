@@ -1,0 +1,16 @@
+.intro-inner {
+  height: auto;
+  padding-top: 225px;
+  padding-bottom: 45px;
+
+  background: url("../img/bc/slide1.jpg") no-repeat;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    padding-top: 95px;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 130px;
+  }
+}

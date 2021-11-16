@@ -18,11 +18,11 @@
     left: 0;
 
     display: block;
-    width: 14px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 
     background: url("../img/icon/phone.svg") no-repeat;
-    transform: translate(0, -50%) rotate(-45deg);
+    transform: translate(0, -50%);
   }
 
   &--big {
@@ -43,7 +43,7 @@
     color: $c-accent;
   }
 
-  &:hover {
+  .phone:hover & {
     color: $c-accent;
     text-decoration: none;
   }

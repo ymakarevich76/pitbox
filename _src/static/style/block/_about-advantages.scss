@@ -1,0 +1,146 @@
+.about-advantages {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.about-advantages__bc-text {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 180px;
+  line-height: 1;
+  font-family: $ff-secondary;
+  text-align: center;
+  color: #fff;
+
+  opacity: .02;
+
+  @media (max-width: $lg) {
+    font-size: 140px;
+  }
+
+  @media (max-width: $sm) {
+    bottom: 10px;
+
+    font-size: 108px;
+  }
+}
+
+.about-advantages__wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #272727;
+}
+
+.about-advantages__block {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 59px 40px;
+
+  @media (max-width: $xl) {
+    padding: 49px 30px;
+  }
+
+  @media (max-width: $lg) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @media (max-width: $sm) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  &:nth-child(2) {
+    background-color: #343434;
+  }
+
+  &:nth-child(3) {
+    background-color: #404040;
+  }
+
+  &:nth-child(4) {
+    background-color: #4b4b4b;
+  }
+
+  & svg {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin-bottom: 30px;
+
+    fill: $c-accent;
+
+    @media (max-width: $xl) {
+      width: 47px;
+      height: 47px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-advantages__title-main {
+  margin-bottom: 10px;
+
+  font-size: 34px;
+  line-height: 40px;
+  text-align: left;
+  color: $c-secondary;
+
+  @media (max-width: $xl) {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  & span {
+    color: $c-accent;
+  }
+}
+
+.about-advantages__title-separator {
+  margin: 0 0 35px;
+
+  @media (max-width: $sm) {
+    width: 46px;
+    height: 3px;
+  }
+}
+
+.about-advantages__text {
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: #cacaca;
+
+  @media (max-width: $md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.about-advantages__title {
+  margin-bottom: 10px;
+
+  line-height: 32px;
+  color: #cacaca;
+
+  @media (max-width: $xl) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.about-advantages__btn {
+  @media (max-width: $sm) {
+    min-width: 102px;
+  }
+}

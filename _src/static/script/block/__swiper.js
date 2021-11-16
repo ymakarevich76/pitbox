@@ -56,7 +56,6 @@ if (document.querySelector('.stages-work__slider')) {
 
 const testimonialsSlider = new Swiper('.testimonials__slider', {
   loop: true,
-  // effect: "fade",
 
   pagination: {
     el: ".testimonials__pagination",
@@ -73,4 +72,29 @@ const testimonialsSlider = new Swiper('.testimonials__slider', {
     delay: 2500,
     speed: 500,
   },
+});
+
+
+const gallerySlider = new Swiper('.gallery__slider', {
+  loop: true,
+
+  pagination: {
+    el: ".gallery__pagination",
+    clickable: true,
+  },
+
+  slidesPerView: 4,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2
+    },
+    576: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 4
+    }
+  }
+
 });

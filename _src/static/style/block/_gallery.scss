@@ -1,0 +1,30 @@
+.gallery {
+}
+
+.gallery__title {
+  margin-bottom: 10px;
+
+  & span {
+    color: $c-accent;
+  }
+}
+
+.gallery__title-desc {
+  margin-bottom: 40px;
+
+
+  @media (max-width: $sm) {
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+}
+
+.gallery__wrapper {
+  margin-bottom: 45px;
+}
+
+.gallery__wrap-img {
+  & img {
+    // height: 374px;
+  }
+}

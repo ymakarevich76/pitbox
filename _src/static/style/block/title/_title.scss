@@ -46,7 +46,7 @@ h3 {
   line-height: 33px;
   font-family: $ff-secondary;
   text-align: center;
-  color: #292929;
+  color: $c-main;
 
   @media (max-width: $xl) {
     font-size: 25px;
@@ -81,7 +81,7 @@ h4 {
   line-height: 26px;
   font-family: $ff-secondary;
   text-align: center;
-  color: #292929;
+  color: $c-main;
 
   @media (max-width: $lg) {
     font-size: 15px;

@@ -98,6 +98,11 @@
   line-height: 25px;
   color: #d4d4d4;
 
+  &:hover {
+    color: $c-secondary;
+    text-decoration: none;
+  }
+
   @media (max-width: $lg) {
     font-size: 15px;
     line-height: 21px;
@@ -110,6 +115,11 @@
   font-size: $fz-main;
   line-height: 25px;
   color: #d4d4d4;
+
+  &:hover {
+    color: $c-secondary;
+    text-decoration: none;
+  }
 
   &::before {
     top: 5px;

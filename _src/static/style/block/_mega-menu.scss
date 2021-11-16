@@ -1,17 +1,4 @@
 .mega-menu {
-  position: absolute;
-  top: 99%;
-  left: 45px;
-  z-index: 50;
-
-  justify-content: center;
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 20px 0;
-
-  background-color: $c-secondary;
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
   visibility: hidden;
   opacity: 0;
 
@@ -25,6 +12,22 @@
       visibility: hidden;
       opacity: 0;
     }
+  }
+}
+
+.mega-menu__container {
+  position: absolute;
+  top: 99%;
+  left: 15px;
+  z-index: 50;
+
+  padding: 0;
+
+  background-color: $c-secondary;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, .2);
+
+  @media (max-width: $xl) {
+    padding: 0;
   }
 
   @media (max-width: $lg) {
@@ -50,7 +53,7 @@
     background-color: transparent;
   }
 
-  .nav__link--active + & {
+  .nav__link--active + .mega-menu & {
     @media (max-width: $md) {
       position: relative;
     }
@@ -84,7 +87,7 @@
   font-size: 15px;
   line-height: 20px;
   font-family: $ff-secondary;
-  color: $c-main;
+  color: #000;
 
   transition: all .2 ease;
 

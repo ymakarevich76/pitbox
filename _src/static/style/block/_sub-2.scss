@@ -1,21 +1,43 @@
 
 .sub-2__item {
+  position: relative;
+
   padding: 10px;
+  padding-left: 20px;
 
   @media (max-width: $lg) {
     padding: 5px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    background: url("../img/icon/check-solid.svg") no-repeat;
+    transform: translate(0, -50%);
+
+    @media (max-width: $lg) {
+      left: -7px;
+
+      width: 15px;
+      height: 15px;
+
+      font-size: 15px;
+    }
+  }
 }
 
 .sub-2__link {
-  position: relative;
-
-  padding-left: 20px;
-
   font-size: 15px;
   line-height: 20px;
   font-family: $ff-secondary;
-  color: $c-main;
+  color: #000;
 
   transition: all .2 ease;
 
@@ -31,30 +53,5 @@
   &:hover {
     color: $c-accent;
     text-decoration: none;
-  }
-
-  &::before {
-    content: "\2714";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: block;
-    width: 20px;
-    height: 20px;
-
-    font-weight: 400;
-    font-size: 20px;
-    font-family: $ff-secondary;
-    color: $c-accent;
-
-    @media (max-width: $lg) {
-      left: -7px;
-
-      width: 15px;
-      height: 15px;
-
-      font-size: 15px;
-    }
   }
 }

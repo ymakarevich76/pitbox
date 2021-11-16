@@ -107,7 +107,7 @@
   line-height: 25px;
   font-family: $ff-main;
   text-align: left;
-  color: #292929;
+  color: $c-main;
 
   @media (max-width: $lg) {
     text-align: center;

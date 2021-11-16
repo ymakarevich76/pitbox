@@ -15,32 +15,54 @@
   & span {
     color: $c-accent;
   }
+
+  @media (max-width: $md) {
+    font-size: 30px;
+  }
 }
 
 .promo-sale__title-separator {
   margin: 0 0 40px;
 }
 
-.promo-sale__block {
+.promo-sale__wrap {
+  display: flex;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.promo-sale__block-img {
   position: relative;
 
-  width: $c-6;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: 50%;
 
-  @media (max-width: $lg) {
-    width: $c-4;
-  }
-
-  &:nth-child(2) {
-    padding: 25px 0 0 80px;
-
-    @media (max-width: $lg) {
-      width: $c-8;
-      padding-right: 15px;
-    }
+  @media (max-width: $md) {
+    width: 100%;
   }
 }
 
 .promo-sale__wrap-img {
+  & img {
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+}
+
+.promo-sale__block-desc {
+  flex-grow: 1;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-left: 70px;
+
+
+  @media (max-width: $md) {
+    padding-left: 0;
+  }
 }
 
 .promo-sale__text {
@@ -85,14 +107,21 @@
 
 .promo-sale__clip {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  right: -30px;
+  bottom: -30px;
 
   width: 338px;
   padding: 46px 20px 46px;
 
   background-color: #2d2d2d;
-  transform: translate(0, -50%);
+
+
+  @media (max-width: $md) {
+    right: 10px;
+    bottom: 10px;
+
+    max-width: calc(100% - 20px);
+  }
 }
 
 .promo-sale__clip-name {
@@ -102,10 +131,31 @@
   font-size: 27px;
   line-height: 28px;
   font-family: $ff-secondary;
+  text-align: center;
   color: $c-secondary;
+
+  @media (max-width: $lg) {
+    margin-bottom: 15px;
+
+    font-size: 23px;
+    line-height: 23px;
+  }
 }
 
 .promo-sale__wrap-btn {
   display: flex;
   justify-content: center;
+}
+
+.promo-sale__btn {
+  @media (max-width: $lg) {
+    padding: 12px 10px;
+  }
+
+
+  & span {
+    @media (max-width: $lg) {
+      font-size: 15px;
+    }
+  }
 }

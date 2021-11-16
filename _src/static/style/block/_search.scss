@@ -9,10 +9,8 @@
   position: absolute;
   top: 0;
   right: 50px;
-  // transform: translateX(-100%);
 
   display: none;
-  // order: 0;
   min-width: auto;
   height: 50px;
   padding: 10px;
@@ -26,6 +24,10 @@
   outline: none;
 
   transition: .3s;
+
+  .search:hover & {
+    display: block;
+  }
 }
 
 .search__btn {
@@ -44,25 +46,21 @@
     transition: .3s;
 
     fill: #5f5f5f;
+
+    .search:hover & {
+      fill: $c-secondary;
+    }
+
     @media (max-width: $lg) {
       fill: $c-secondary;
     }
   }
 
-  &:hover {
+  .search:hover & {
     background-color: $c-accent;
 
     @media (max-width: $lg) {
       background-color: transparent;
     }
-  }
-
-  &:hover svg {
-    fill: $c-secondary;
-  }
-
-  &:hover + .search__input {
-    // transform: translateX(0);
-    display: block;
   }
 }

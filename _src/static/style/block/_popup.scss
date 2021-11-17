@@ -1,0 +1,165 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: rgba( 0, 0, 0, .8);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all .8s ease 0s;
+
+  &--open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &--open .popup__content {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.popup__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  position: relative;
+
+  width: 970px;
+  // padding: 0 50px 40px;
+
+  background-color: #fff;
+  transform: translate(0, -100%);
+  opacity: 0;
+
+  transition: all .8s ease 0;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup__close {
+  position: absolute;
+  top: 5px;
+  right: -64px;
+
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/icon/uniE930.svg") no-repeat;
+  background-size: 100%;
+  border: 0;
+  opacity: 1;
+}
+
+.popup__desc {
+  padding: 0 50px 40px;
+}
+
+.popup__title {
+  margin-bottom: 16px;
+
+  line-height: 37px;
+  text-align: left;
+  color: #000;
+
+  & span {
+    color: $c-accent;
+  }
+}
+
+.popup__form {
+  display: flex;
+}
+
+.popup__form-title {
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  line-height: 22px;
+  color: #000;
+}
+
+.popup__form-col {
+  width: calc(100% / 3);
+  margin-right: 30px;
+}
+
+.popup__form-col-wide {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.popup__form-col-inner {
+  width: calc(50% - 30px);
+  margin: 0 15px;
+}
+
+.popup__form-box-input {
+  flex-direction: column;
+}
+
+.popup__form-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.popup__form-select {
+  height: 50px;
+
+  color: #8d8d8d;
+
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+}
+
+.popup__form-textarea {
+  width: calc(100% - 30px);
+  height: 50px;
+  margin: 0 15px;
+}
+
+.popup__form-wrap-date {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    display: block;
+    width: 20px;
+    height: 27px;
+
+    background: url("../img/icon/uniE901.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  // .popup__form-input:focus &::after {
+  //   display: none;
+  // }
+}
+
+#date:focus .popup__form-wrap-date::after {
+  visibility: hidden;
+  opacity: 0;
+}

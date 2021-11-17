@@ -1,0 +1,32 @@
+.sub-menu-aside {
+}
+
+.sub-menu-aside__list {
+}
+
+.sub-menu-aside__item {
+}
+
+.sub-menu-aside__link {
+  display: block;
+  padding: 10px 20px 10px 80px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $ff-main;
+  color: #5e5e5e;
+
+  @media (max-width: $lg) {
+    padding-left: 40px;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  &--active {
+    color: $c-accent;
+  }
+}

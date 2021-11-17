@@ -1,0 +1,31 @@
+
+.accordion-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+
+  &--active {
+    color: $c-accent;
+  }
+
+  &--active svg {
+    transform: rotate(180deg);
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+
+    fill: $c-main;
+  }
+}
+
+.accordion-btn + * {
+  display: none;
+}
+
+.accordion-btn--active + * {
+  display: block;
+}

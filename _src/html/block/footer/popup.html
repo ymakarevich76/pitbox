@@ -1,0 +1,83 @@
+<div class="popup__wrap">
+
+  <div id="popup-order" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__header">
+          <button type="button" class="header__appointment btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
+            </svg>
+            <span>Записаться</span>
+          </button>
+          <button type="button" class="popup__close btn-reset"></button>
+        </div>
+        <div class="popup__desc">
+          <h3 class="popup__title">Записаться <span>на приём</span></h3>
+          <p>Чтобы записаться на прием, позвоните нам по телефону + 7 (495) 649-98-39 или заполните форму ниже, указав
+            свою
+            информацию и запрашиваемые услуги.</p>
+
+          <form action="" class="popup__form form">
+
+            <div class="popup__form-col">
+              <h4 class="popup__form-title">Контакты</h4>
+
+              <div class="popup__form-box-input form__box-input">
+                <input class="popup__form-input form__input" type="text" id="popup-name" required placeholder="Имя">
+
+                <input class="popup__form-input form__input" type="text" id="popup-phone" required
+                  placeholder="Телефон">
+                <select name="service" id="service" class="popup__form-select form__input" aria-required="true"
+                  aria-invalid="false">
+                  <option value="Сервис-1" selected>Сервис 1</option>
+                  <option value="Сервис-2">Сервис 2</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="popup__form-col-wide">
+              <div class="popup__form-col-inner">
+                <h4 class="popup__form-title">Информация об авто</h4>
+
+                <div class="popup__form-box-input form__box-input">
+                  <input class="popup__form-input form__input" type="text" id="popup-model"
+                    placeholder="Марка и модель">
+
+                  <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Марка и модель">
+                </div>
+              </div>
+
+              <div class="popup__form-col-inner">
+                <h4 class="popup__form-title">
+                  Детали встречи</h4>
+
+                <div class="popup__form-box-input form__box-input">
+                  <div class="popup__form-wrap-date">
+                    <input class="popup__form-input form__input" placeholder="Дата" type="text"
+                      onfocus="(this.type='date')" id="date">
+                  </div>
+
+
+                  <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Марка и модель">
+                </div>
+
+
+
+              </div>
+
+              <textarea class="popup__form-textarea form__input" placeholder="Комментарий"></textarea>
+            </div>
+
+
+
+
+          </form>
+        </div>
+      </div>
+      <!--/popup__content-->
+    </div>
+    <!--/popup__body-->
+  </div>
+  <!--/popup-->
+</div>

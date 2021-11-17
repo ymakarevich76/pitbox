@@ -28,11 +28,35 @@ nav.addEventListener('click', (evt) => {
 });
 
 
-if (document.querySelector('.nav__link')) {
-  const arrowsMenu = document.querySelectorAll('.nav__link');
+if (document.querySelector('.nav__box-icon')) {
+  const arrowsMenu = document.querySelectorAll('.nav__box-icon');
   arrowsMenu.forEach((arrow, index) => {
     arrow.addEventListener('click', (evt) => {
-      evt.currentTarget.classList.toggle('nav__link--active');
+      evt.currentTarget.classList.toggle('nav__box-icon--active');
+    })
+  });
+}
+
+if (document.querySelector('.nav__link')) {
+  const navs = document.querySelectorAll('.nav__link');
+  navs.forEach((nav, index) => {
+    nav.addEventListener('click', (evt) => {
+      evt.currentTarget.classList.toggle('nav__link--border');
+    })
+  });
+}
+
+if (document.querySelector('.nav__link')) {
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  navLinks.forEach((nav, index) => {
+    nav.addEventListener('click', (evt) => {
+
+      navLinks.forEach((nav) => {
+        nav.classList.remove('nav__link--border');
+      });
+
+      evt.currentTarget.classList.add('nav__link--border');
     })
   });
 }

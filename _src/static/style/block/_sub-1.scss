@@ -1,7 +1,7 @@
 .sub-1 {
   position: absolute;
   top: 99%;
-  left: 35.3%;
+  left: 34.3%;
 
   width: calc(100% / 4);
 
@@ -23,7 +23,7 @@
   }
 
   @media (max-width: $xl) {
-    left: 59%;
+    left: 36.5%;
   }
 
   @media (max-width: $lg) {
@@ -46,7 +46,7 @@
     background-color: transparent;
   }
 
-  .nav__link--active + & {
+  .nav__box-icon--active + & {
     @media (max-width: $md) {
       position: relative;
     }

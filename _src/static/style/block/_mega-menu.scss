@@ -53,7 +53,7 @@
     background-color: transparent;
   }
 
-  .nav__link--active + .mega-menu & {
+  .nav__box-icon--active + .mega-menu & {
     @media (max-width: $md) {
       position: relative;
     }

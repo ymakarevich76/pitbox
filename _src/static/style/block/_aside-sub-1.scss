@@ -1,0 +1,27 @@
+.aside-sub-1 {
+}
+
+
+.aside-sub-1__link {
+  display: block;
+  padding: 10px 20px 10px 100px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $ff-main;
+  color: #5e5e5e;
+
+  @media (max-width: $lg) {
+    padding-left: 60px;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  &--active {
+    color: $c-accent;
+  }
+}

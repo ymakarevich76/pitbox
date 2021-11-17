@@ -1,0 +1,29 @@
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+
+  @media (max-width: $lg) {
+    margin-top: 50px;
+  }
+}
+
+.brands__link {
+  display: block;
+  // margin-right: 30px;
+  margin-bottom: 80px;
+
+  @media (max-width: $xl) {
+    min-width: 110px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $md) {
+    // min-width: auto;
+  }
+}

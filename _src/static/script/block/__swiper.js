@@ -43,7 +43,6 @@ if (document.querySelector('.stages-work__slider')) {
         },
       });
     } else {
-      console.log(stagesWorkSlider);
       if (typeof (stagesWorkSlider) !== "undefined") {
         stagesWorkSlider.destroy();
       }

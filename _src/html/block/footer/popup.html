@@ -4,7 +4,7 @@
     <div class="popup__body">
       <div class="popup__content">
         <div class="popup__header">
-          <button type="button" class="header__appointment btn-reset">
+          <button type="button" class="popup__appointment appointment btn-reset">
             <svg aria-hidden="true">
               <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
             </svg>
@@ -20,57 +20,65 @@
 
           <form action="" class="popup__form form">
 
-            <div class="popup__form-col">
-              <h4 class="popup__form-title">Контакты</h4>
+            <div class="popup__form-row">
 
-              <div class="popup__form-box-input form__box-input">
-                <input class="popup__form-input form__input" type="text" id="popup-name" required placeholder="Имя">
-
-                <input class="popup__form-input form__input" type="text" id="popup-phone" required
-                  placeholder="Телефон">
-                <select name="service" id="service" class="popup__form-select form__input" aria-required="true"
-                  aria-invalid="false">
-                  <option value="Сервис-1" selected>Сервис 1</option>
-                  <option value="Сервис-2">Сервис 2</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="popup__form-col-wide">
-              <div class="popup__form-col-inner">
-                <h4 class="popup__form-title">Информация об авто</h4>
+              <div class="popup__form-col">
+                <h4 class="popup__form-title">Контакты</h4>
 
                 <div class="popup__form-box-input form__box-input">
-                  <input class="popup__form-input form__input" type="text" id="popup-model"
-                    placeholder="Марка и модель">
+                  <input class="popup__form-input form__input" type="text" id="popup-name" required placeholder="Имя">
 
-                  <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Марка и модель">
+                  <input class="popup__form-input form__input" type="text" id="popup-phone" required
+                    placeholder="Телефон">
+                  <select name="service" id="service" class="popup__form-select form__input" aria-required="true"
+                    aria-invalid="false">
+                    <option value="Сервис-1" selected>Сервис 1</option>
+                    <option value="Сервис-2">Сервис 2</option>
+                  </select>
                 </div>
               </div>
 
-              <div class="popup__form-col-inner">
-                <h4 class="popup__form-title">
-                  Детали встречи</h4>
+              <div class="popup__form-col-wide">
+                <div class="popup__form-col-inner">
+                  <h4 class="popup__form-title">Информация об авто</h4>
 
-                <div class="popup__form-box-input form__box-input">
-                  <div class="popup__form-wrap-date">
-                    <input class="popup__form-input form__input" placeholder="Дата" type="text"
-                      onfocus="(this.type='date')" id="date">
+                  <div class="popup__form-box-input form__box-input">
+                    <input class="popup__form-input form__input" type="text" id="popup-model"
+                      placeholder="Марка и модель">
+
+                    <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Год выпуска">
                   </div>
-
-
-                  <input class="popup__form-input form__input" type="text" id="popup-year" placeholder="Марка и модель">
                 </div>
 
+                <div class="popup__form-col-inner">
+                  <h4 class="popup__form-title">
+                    Детали встречи</h4>
 
+                  <div class="popup__form-box-input form__box-input">
+                    <div class="popup__form-wrap-date popup__form-wrap-date">
+                      <input class="popup__form-input form__input" placeholder="Дата" type="text"
+                        onfocus="(this.type='date')" id="date">
+                    </div>
 
+                    <div class="popup__form-wrap-time popup__form-wrap-time">
+                      <input class="popup__form-input form__input" type="text" onfocus="(this.type='time')" id="time"
+                        placeholder="10:00">
+                    </div>
+                  </div>
+                </div>
+
+                <textarea class="popup__form-textarea form__input" placeholder="Комментарий"></textarea>
               </div>
-
-              <textarea class="popup__form-textarea form__input" placeholder="Комментарий"></textarea>
             </div>
 
-
-
+            <div class="popup__wrap-btn">
+              <button type="submit" class="popup__btn btn btn-reset">
+                <span>Записаться</span>
+              </button>
+              <p class="popup__btn-text">Обратите внимание, что запрошенные вами дата и время могут быть
+                недоступны.
+              </p>
+            </div>
 
           </form>
         </div>

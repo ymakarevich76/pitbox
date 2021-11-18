@@ -248,6 +248,10 @@
   & span {
     color: $c-main;
   }
+
+  &:hover span {
+    color: $c-secondary;
+  }
 }
 
 .our-services__nav {

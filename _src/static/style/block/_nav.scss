@@ -1,7 +1,6 @@
 .nav {
   @media (max-width: $md) {
     overflow-x: hidden;
-    // overflow-y: scroll;
   }
 }
 
@@ -10,11 +9,6 @@
 
   @media (max-width: $lg) {
     flex-direction: column;
-    // overflow-x: hidden;
-  }
-
-  @media (max-width: $md) {
-    // overflow-x: hidden;
   }
 }
 
@@ -45,9 +39,7 @@
   }
 
   @media (max-width: $lg) {
-    // position: relative;
     display: inline-block;
-    // width: 100%;
     width: auto;
     min-width: 170px;
     padding: 10px 40px 10px 15px;
@@ -92,20 +84,6 @@
   &--border::after {
     width: 100%;
   }
-
-  // & + * {
-  //   @media (max-width: $lg) {
-  //     visibility: hidden;
-  //     opacity: 0;
-  //   }
-  // }
-
-  // &--active + * {
-  //   @media (max-width: $lg) {
-  //     visibility: visible !important;
-  //     opacity: 1 !important;
-  //   }
-  // }
 }
 
 
@@ -114,17 +92,13 @@
 
   @media (max-width: $lg) {
     position: absolute;
-    // top: 50%;
     top: 0;
-    // right: 20px;
     right: 15px;
     z-index: 50;
 
     display: block;
     width: 40px;
     height: 40px;
-
-    // transform: translate(0, -50%);
   }
 
   & + * {
@@ -140,21 +114,21 @@
       opacity: 1 !important;
     }
   }
-}
 
-.nav__box-icon svg {
-  @media (max-width: $lg) {
-    width: 18px;
-    height: 18px;
+  & svg {
+    @media (max-width: $lg) {
+      width: 18px;
+      height: 18px;
 
-    fill: $c-secondary;
+      fill: $c-secondary;
+    }
+
+    @media (max-width: $md) {
+      transform: rotate(90deg);
+    }
   }
 
-  @media (max-width: $md) {
-    transform: rotate(90deg);
-  }
-
-  .nav__box-icon--active & {
+  &--active svg {
     @media (max-width: $md) {
       transform: rotate(-90deg);
     }

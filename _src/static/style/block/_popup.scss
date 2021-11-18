@@ -32,29 +32,62 @@
   align-items: center;
   min-height: 100%;
   padding: 30px 10px;
+
+  @media (max-width: $lg) {
+    padding: 0;
+  }
 }
 
 .popup__content {
   position: relative;
 
   width: 970px;
-  // padding: 0 50px 40px;
 
   background-color: #fff;
   transform: translate(0, -100%);
   opacity: 0;
 
   transition: all .8s ease 0;
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
 }
 
 .popup__header {
+  position: relative;
+
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: $xl) {
+    margin-bottom: 35px;
+
+    background-color: #131313;
+  }
+}
+
+.popup__appointment {
+  @media (max-width: $lg) {
+    width: 208px;
+
+    font-size: 19px;
+  }
+
+  @media (max-width: $md) {
+    height: 50px;
+  }
+
+  &::after {
+    @media (max-width: $md) {
+      border-bottom-width: 50px;
+    }
+  }
 }
 
 .popup__close {
   position: absolute;
-  top: 5px;
+  top: 50%;
   right: -64px;
 
   width: 30px;
@@ -63,11 +96,30 @@
   background: url("../img/icon/uniE930.svg") no-repeat;
   background-size: 100%;
   border: 0;
+  transform: translate(0, -50%);
   opacity: 1;
+
+  @media (max-width: $xl) {
+    right: 95%;
+  }
+
+  @media (max-width: $lg) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: $sm) {
+    right: 90%;
+  }
 }
 
 .popup__desc {
   padding: 0 50px 40px;
+
+  @media (max-width: $md) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 .popup__title {
@@ -80,23 +132,41 @@
   & span {
     color: $c-accent;
   }
+
+  @media (max-width: $lg) {
+    font-size: 27px;
+  }
 }
 
-.popup__form {
+.popup__form-row {
   display: flex;
+  margin-bottom: 30px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
 }
 
 .popup__form-title {
   margin-bottom: 15px;
 
-  font-size: 20px;
+  font-size: 18px;
   line-height: 22px;
   color: #000;
+
+  @media (max-width: $md) {
+    font-size: $fz-main;
+  }
 }
 
 .popup__form-col {
   width: calc(100% / 3);
   margin-right: 30px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .popup__form-col-wide {
@@ -104,11 +174,25 @@
   flex-grow: 1;
   flex-wrap: wrap;
   margin: 0 -15px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
 }
 
 .popup__form-col-inner {
   width: calc(50% - 30px);
   margin: 0 15px;
+
+  &:first-child {
+    @media (max-width: $lg) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: $lg) {
+    width: calc(100% - 30px);
+  }
 }
 
 .popup__form-box-input {
@@ -147,19 +231,71 @@
     right: 15px;
 
     display: block;
-    width: 20px;
-    height: 27px;
+    width: 22px;
+    height: 22px;
 
     background: url("../img/icon/uniE901.svg") no-repeat;
     background-size: 100%;
-  }
 
-  // .popup__form-input:focus &::after {
-  //   display: none;
-  // }
+    pointer-events: none;
+  }
 }
 
-#date:focus .popup__form-wrap-date::after {
-  visibility: hidden;
-  opacity: 0;
+
+.popup__form-wrap-time {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    display: block;
+    width: 22px;
+    height: 22px;
+
+    background: url("../img/icon/uniE90A.svg") no-repeat;
+    background-size: 100%;
+
+    pointer-events: none;
+  }
+}
+
+.popup__wrap-btn {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $md) {
+    flex-wrap: wrap;
+  }
+}
+
+.popup__btn {
+  min-width: 207px;
+  margin-right: 15px;
+
+  box-shadow: inset 0 0 0 2px #3a3a3a;
+
+  & span {
+    color: #2c2c2c;
+  }
+
+  &:hover span {
+    color: $c-secondary;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
+}
+
+.popup__btn-text {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 24px;
+  font-family: $ff-main;
+  color: $c-main;
 }

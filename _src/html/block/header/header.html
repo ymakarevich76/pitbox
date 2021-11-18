@@ -28,19 +28,26 @@
         <div class="header__right">
           <div class="header__right-top">
             <div class="header__time">
-              <p class="header__info-time">
+              <p class="header__time-info">
                 Понедельник-Воскресенье<br>
-                <span class="header__info-time--color">9:00 - 22:00</span>
+                <span class="header__time-info--color">9:00 - 22:00</span>
               </p>
-              <p class="header__info-time header__info-time--short">
+              <p class="header__time-info">
+                Понедельник-Воскресенье<br>
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info header__time-info--short">
                 Пн-Вс:
-                <span class="header__info-time--color">9:00 - 22:00</span>
+                <span class="header__time-info--color">9:00 - 22:00</span>
+              </p>
+              <p class="header__time-info header__time-info--short">
+                Пн-Вс:
+                <span class="header__time-info--color">9:00 - 22:00</span>
               </p>
             </div>
-            <!-- <p class="header__time">Понедельник-Воскресенье<br>
-            <span class="header__info-time--color">9:00 - 22:00</span>
-          </p> -->
-            <button type="button" class="header__appointment popup__link btn-reset" data-da=".header__mob,768, last">
+
+            <button type="button" class="header__appointment appointment popup__link btn-reset"
+              data-da=".header__mob,767, last">
               <svg aria-hidden="true">
                 <use xlink:href="static/img/symbol/sprite.svg#arrow-circle-right"></use>
               </svg>
@@ -78,6 +85,7 @@
   </div>
   <div class="header__wrap-bottom container animate__animated animate__fast">
     <div class="header__bottom">
+
       <nav class="header__nav nav" data-da=".header__nav-lg,992, first">
         <button class="header__icon-close btn-reset">
         </button>
@@ -218,14 +226,16 @@
           </li>
         </ul>
       </nav>
-      <form action="" class="header__search search" data-da=".header__right-block,992, first">
-        <button type="submit" class="search__btn btn-reset">
-          <svg aria-hidden="true">
-            <use xlink:href="static/img/symbol/sprite.svg#search"></use>
-          </svg>
-        </button>
-        <input type="search" id="search" placeholder="Search …" class="search__input">
-      </form>
+      <div>
+        <form action="" class="header__search search" data-da=".header__right-block,992, first">
+          <button type="submit" class="search__btn btn-reset">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <input type="search" id="search" placeholder="Search …" class="search__input">
+        </form>
+      </div>
     </div>
   </div>
 
